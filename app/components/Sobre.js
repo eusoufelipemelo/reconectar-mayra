@@ -5,7 +5,7 @@ export default function Sobre() {
         <div className="sobre-grid">
           <div className="sobre-portrait reveal">
             <div className="frame">
-              <img src="/sobre-mayra.jpg" alt="Mayra Maximiano" />
+              <img src="/sobre-mayra.webp" alt="Mayra Maximiano" loading="lazy" />
             </div>
           </div>
           <div className="reveal d1">

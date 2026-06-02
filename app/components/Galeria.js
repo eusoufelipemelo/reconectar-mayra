@@ -3,15 +3,15 @@
 import { useEffect, useRef, useState } from "react";
 
 const SLIDES = [
-  { src: "/evento-01.jpg", alt: "Mayra Maximiano abrindo uma edição anterior do Re.conectar no palco", caption: "A abertura" },
-  { src: "/evento-02.jpg", alt: "Plateia reunida em uma edição anterior do Re.conectar", caption: "Presença total" },
-  { src: "/evento-03.jpg", alt: "Mayra Maximiano palestrando sobre o poder da mente sobre o corpo", caption: "O poder da mente" },
-  { src: "/evento-04.jpg", alt: "Kits de boas-vindas preparados para os participantes", caption: "Kit boas-vindas" },
-  { src: "/evento-05.jpg", alt: "Foto de grupo das participantes de uma edição anterior do Re.conectar", caption: "Todos juntos" },
-  { src: "/evento-06.jpg", alt: "Mesa de coffee break do evento Re.conectar", caption: "Coffee break" },
-  { src: "/evento-07.jpg", alt: "Participantes atentas durante a palestra do Re.conectar", caption: "Escuta e troca" },
-  { src: "/evento-08.jpg", alt: "Mesa com bolo e doces preparados com carinho para o evento", caption: "Nos detalhes" },
-  { src: "/evento-09.jpg", alt: "Mesa de café e recepção do evento Re.conectar", caption: "Receber bem" },
+  { src: "/evento-01.webp", alt: "Mayra Maximiano abrindo uma edição anterior do Re.conectar no palco", caption: "A abertura" },
+  { src: "/evento-02.webp", alt: "Plateia reunida em uma edição anterior do Re.conectar", caption: "Presença total" },
+  { src: "/evento-03.webp", alt: "Mayra Maximiano palestrando sobre o poder da mente sobre o corpo", caption: "O poder da mente" },
+  { src: "/evento-04.webp", alt: "Kits de boas-vindas preparados para os participantes", caption: "Kit boas-vindas" },
+  { src: "/evento-05.webp", alt: "Foto de grupo das participantes de uma edição anterior do Re.conectar", caption: "Todos juntos" },
+  { src: "/evento-06.webp", alt: "Mesa de coffee break do evento Re.conectar", caption: "Coffee break" },
+  { src: "/evento-07.webp", alt: "Participantes atentas durante a palestra do Re.conectar", caption: "Escuta e troca" },
+  { src: "/evento-08.webp", alt: "Mesa com bolo e doces preparados com carinho para o evento", caption: "Nos detalhes" },
+  { src: "/evento-09.webp", alt: "Mesa de café e recepção do evento Re.conectar", caption: "Receber bem" },
 ];
 
 const EmptyIco = () => (
@@ -76,7 +76,7 @@ export default function Galeria() {
       onClick={(e) => openSlide(e, slide)}
     >
       <EmptyIco />
-      <img src={slide.src} alt={slide.alt} onError={onImgError} />
+      <img src={slide.src} alt={slide.alt} onError={onImgError} loading="lazy" />
       <figcaption>
         <span>Re.conectar</span>
         {slide.caption}

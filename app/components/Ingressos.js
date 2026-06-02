@@ -8,7 +8,7 @@ const Check = () => (
   </svg>
 );
 
-function BuyButton({ href, label, closed }) {
+function BuyButton({ href, label, ariaLabel, closed }) {
   if (closed) {
     return (
       <a className="btn is-closed" aria-disabled="true" role="link">
@@ -17,7 +17,13 @@ function BuyButton({ href, label, closed }) {
     );
   }
   return (
-    <a href={href} className="btn" target="_blank" rel="noopener noreferrer">
+    <a
+      href={href}
+      className="btn"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label={ariaLabel}
+    >
       <span>{label}</span>
       <span className="arr">→</span>
     </a>
@@ -63,7 +69,7 @@ export default function Ingressos() {
                 Dia completo de experiência
               </li>
             </ul>
-            <BuyButton href="https://chk.eduzz.com/KW8ZV87O01" label="Quero esse" closed={closed} />
+            <BuyButton href="https://chk.eduzz.com/KW8ZV87O01" label="Quero esse" ariaLabel="Comprar convite Individual" closed={closed} />
           </article>
 
           <article className="ticket feat reveal d2">
@@ -92,7 +98,7 @@ export default function Ingressos() {
                 Acompanhamento individual
               </li>
             </ul>
-            <BuyButton href="https://chk.eduzz.com/8017DNA607" label="Quero o Premium" closed={closed} />
+            <BuyButton href="https://chk.eduzz.com/8017DNA607" label="Quero o Premium" ariaLabel="Comprar convite Premium" closed={closed} />
           </article>
 
           <article className="ticket reveal d3">
@@ -116,7 +122,7 @@ export default function Ingressos() {
                 Traga alguém especial com você
               </li>
             </ul>
-            <BuyButton href="https://chk.eduzz.com/7WXG1K6D0A" label="Quero esse" closed={closed} />
+            <BuyButton href="https://chk.eduzz.com/7WXG1K6D0A" label="Quero esse" ariaLabel="Comprar convite Duplo" closed={closed} />
           </article>
         </div>
       </div>

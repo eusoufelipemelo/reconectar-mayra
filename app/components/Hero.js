@@ -37,7 +37,7 @@ export default function Hero() {
   return (
     <header className="hero">
       <div className="hero-bg" aria-hidden="true" ref={bgRef}>
-        <img src="/hero-mayra-hd.jpg" alt="" className="hero-bg-img" />
+        <img src="/hero-mayra-hd.webp" alt="" className="hero-bg-img" fetchPriority="high" />
       </div>
       <div className="hero-overlay" aria-hidden="true"></div>
       <div className="hero-glow" aria-hidden="true"></div>
@@ -123,7 +123,7 @@ export default function Hero() {
 
         <div className="hero-photo-mobile" aria-hidden="true">
           <div className="hpm-frame">
-            <img src="/hero-mayra-hd.jpg" alt="Mayra Maximiano" />
+            <img src="/hero-mayra-hd.webp" alt="Mayra Maximiano" fetchPriority="high" />
           </div>
         </div>
       </div>

@@ -1,7 +1,23 @@
 import "./globals.css";
+import { Mulish, Cormorant_Garamond } from "next/font/google";
+
+const mulish = Mulish({
+  subsets: ["latin"],
+  weight: ["200", "300", "400", "500", "600", "700"],
+  variable: "--font-mulish",
+  display: "swap",
+});
+
+const cormorant = Cormorant_Garamond({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600"],
+  style: ["normal", "italic"],
+  variable: "--font-cormorant",
+  display: "swap",
+});
 
 export const metadata = {
-  metadataBase: new URL("https://reconectar-mayra.vercel.app"),
+  metadataBase: new URL("https://mayramaximiano.com.br"),
   title: "Re.conectar — Evento Presencial com Mayra Maximiano · 27 de Junho",
   description:
     "Em 1 dia de evento presencial, reconecte-se com a sua essência, resgate sua clareza e dê os próximos passos com mais direção. Dia 27 de Junho — ACE de Santa Cruz do Rio Pardo.",
@@ -22,18 +38,9 @@ export const viewport = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="pt-BR">
+    <html lang="pt-BR" className={`${mulish.variable} ${cormorant.variable}`}>
       <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="anonymous"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Mulish:wght@200;300;400;500;600;700&display=swap"
-          rel="stylesheet"
-        />
+        <link rel="preload" as="image" href="/hero-mayra-hd.webp" fetchPriority="high" />
       </head>
       <body>{children}</body>
     </html>

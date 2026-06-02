@@ -17,7 +17,7 @@ export default function Receber() {
           <div className="ritem reveal d1">
             <span className="rnum">I</span>
             <div>
-              <h4>Condução e direcionamento transformador</h4>
+              <h3>Condução e direcionamento transformador</h3>
               <p>
                 Eu e nossa equipe vamos te conduzir por reflexões, dinâmicas e
                 experiências cuidadosamente preparadas para o seu processo de
@@ -28,7 +28,7 @@ export default function Receber() {
           <div className="ritem reveal d2">
             <span className="rnum">II</span>
             <div>
-              <h4>Kit Boas-Vindas exclusivo</h4>
+              <h3>Kit Boas-Vindas exclusivo</h3>
               <p>
                 Ao chegar no Re.conectar, você recebe um kit preparado com
                 carinho para tornar a sua experiência ainda mais especial,
@@ -39,7 +39,7 @@ export default function Receber() {
           <div className="ritem reveal d1">
             <span className="rnum">III</span>
             <div>
-              <h4>Vivências e histórias reais de transformação</h4>
+              <h3>Vivências e histórias reais de transformação</h3>
               <p>
                 Conheça histórias de pessoas que também já se sentiram perdidas,
                 sobrecarregadas ou desconectadas — e que iniciaram uma nova
@@ -50,7 +50,7 @@ export default function Receber() {
           <div className="ritem reveal d2">
             <span className="rnum">IV</span>
             <div>
-              <h4>Um ambiente de acolhimento e crescimento</h4>
+              <h3>Um ambiente de acolhimento e crescimento</h3>
               <p>
                 Mais do que um evento, um espaço seguro para desacelerar, olhar
                 para dentro e perceber que você não está sozinha nessa caminhada.
