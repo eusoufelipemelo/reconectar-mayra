@@ -63,7 +63,7 @@ export default function Ingressos() {
                 Dia completo de experiência
               </li>
             </ul>
-            <BuyButton href="https://chk.eduzz.com/69K1Y25AWO" label="Quero esse" closed={closed} />
+            <BuyButton href="https://chk.eduzz.com/KW8ZV87O01" label="Quero esse" closed={closed} />
           </article>
 
           <article className="ticket feat reveal d2">
@@ -92,7 +92,7 @@ export default function Ingressos() {
                 Acompanhamento individual
               </li>
             </ul>
-            <BuyButton href="https://chk.eduzz.com/40QROAGK9B" label="Quero o Premium" closed={closed} />
+            <BuyButton href="https://chk.eduzz.com/8017DNA607" label="Quero o Premium" closed={closed} />
           </article>
 
           <article className="ticket reveal d3">
@@ -116,7 +116,7 @@ export default function Ingressos() {
                 Traga alguém especial com você
               </li>
             </ul>
-            <BuyButton href="https://chk.eduzz.com/D0R85QN69Y" label="Quero esse" closed={closed} />
+            <BuyButton href="https://chk.eduzz.com/7WXG1K6D0A" label="Quero esse" closed={closed} />
           </article>
         </div>
       </div>
